@@ -19,13 +19,15 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 
 
 <h4> Now extract/unzip/untar - </h4> 
-
- Extract #1 in our Alfresco_HOME. Say - /home/user/alfresco<br>
- Extract #2 in our Solr_HOME - Alfresco_HOME/alfrescoss  
- Extract #3 in our ActiveMQ_HOME - Alfresco_HOME/activemq  
- Extract #4 in Alfresco_HOME/rm-amps<br>
- Extract #5 in our Tomcat_HOME- Alfresco_HOME/tomcat<br> 
- Extract Alfresco_HOME/alfresco-pdf-renderer/alfresco-pdf-renderer-1.1-linux.tgz in Alfresco_HOME/alfresco-pdf-renderer directory
+<ul>
+<li> Extract #1 in our Alfresco_HOME. Say - /home/user/alfresco</li> 
+<li>  Extract #2 in our Solr_HOME - Alfresco_HOME/alfrescoss  </li> 
+<li>  Extract #3 in our ActiveMQ_HOME - Alfresco_HOME/activemq  </li> 
+<li>  Extract #4 in Alfresco_HOME/rm-amps<br></li> 
+<li>  Extract #5 in our Tomcat_HOME- Alfresco_HOME/tomcat</li>  
+<li>  Extract Alfresco_HOME/alfresco-pdf-renderer/alfresco-pdf-renderer-1.1-linux.tgz in Alfresco_HOME/alfresco-pdf-renderer directory</li> 
+ </ul>
+ 
  
  <h4> Files/dirs structure copy/creation steps:</h4>
  <ol>
