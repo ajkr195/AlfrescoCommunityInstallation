@@ -25,7 +25,7 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 <li>  Extract #3 in our ActiveMQ_HOME - Alfresco_HOME/activemq  </li> 
 <li>  Extract #4 in Alfresco_HOME/rm-amps<br></li> 
 <li>  Extract #5 in our Tomcat_HOME- Alfresco_HOME/tomcat</li>  
-<li>  Extract Alfresco_HOME/alfresco-pdf-renderer/alfresco-pdf-renderer-1.1-linux.tgz in Alfresco_HOME/alfresco-pdf-renderer directory</li> 
+<li>  Extract Alfresco_HOME/alfresco-pdf-renderer/alfresco-pdf-renderer-1.1-linux.tgz in this directory - Alfresco_HOME/alfresco-pdf-renderer</li> 
 </ul>
  
  
