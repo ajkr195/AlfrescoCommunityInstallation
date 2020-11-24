@@ -1,5 +1,6 @@
 # AlfrescoCommunityInstallation
-Alfresco Community Edition "New Installation" Steps
+
+<h4> Alfresco Community Edition "New Installation" <br> All-In-One Steps (only HTTP, without SSL configuration) </h4> 
 
 <h4> Sand-Box Pre-Requisites:</h4> 
 
