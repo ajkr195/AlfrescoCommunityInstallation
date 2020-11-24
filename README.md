@@ -25,7 +25,7 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 <li>  Extract #4 in Alfresco_HOME/rm-amps<br></li> 
 <li>  Extract #5 in our Tomcat_HOME- Alfresco_HOME/tomcat</li>  
 <li>  Extract Alfresco_HOME/alfresco-pdf-renderer/alfresco-pdf-renderer-1.1-linux.tgz in Alfresco_HOME/alfresco-pdf-renderer directory</li> 
- </ul>
+</ul>
  
  
  <h4> Files/dirs structure copy/creation steps:</h4>
@@ -36,6 +36,8 @@ https://pgdash.io/blog/postgres-11-getting-started.html
  <li>Now copy Alfresco_HOME/web-server/lib/postgresql-x.y.z.jar to the directory created in above step. That is - Alfresco_HOME/tomcat/shared/lib</li>
  <li>Empty Alfresco_HOME/tomcat/webapps directory. That means - Delete everything inside this directory - Alfresco_HOME/tomcat/webapps </li>
  <li>Now copy all .war files from Alfresco_HOME/web-server/webapps/ to Alfresco_HOME/tomcat/webapps directory </li>
+ <li>Build and create your ACS REST API Explorer war file using `mvn clean install` from here - https://github.com/Alfresco/rest-api-explorer <br> and here <br> https://github.com/Alfresco/records-management/tree/master/rm-community/rm-community-rest-api-explorer <br> OR <br> Download them from https://github.com/ajkr195/AlfrescoCommunityInstallation/blob/main/rest-api-explorer.war and https://github.com/ajkr195/AlfrescoCommunityInstallation/blob/main/rm-rest-api-explorer.war</li>
+ <li>Copy above two generated/downloaded war files to Alfresco_HOME/tomcat/webapps directory</li>
  <li> Create directory - Alfresco_HOME/modules</li>
  <li> Create directory - Alfresco_HOME/modules/platform</li>
  <li> Create directory - Alfresco_HOME/modules/share</li>
