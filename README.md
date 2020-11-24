@@ -47,7 +47,15 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 <li>Save and close Solr_HOME/solrhome/templates/rerank/conf/solrcore.properties file</li>
 <li>Run this command Solr_HOME/solr/bin/solr start -a "-Dcreate.alfresco.defaults=alfresco,archive" </li>
 </ol>
-  
+
+<h4>Install Share and Records Manager (Governance Services) amps files </h4>
+<ol>
+<li>java -jar Alfresco_HOME/bin/alfresco-mmt.jar install Alfresco_HOME/amps/alfresco-share-services.amp Tomcat_HOME/webapps/alfresco.war</li>
+<li>java -jar Alfresco_HOME/bin/alfresco-mmt.jar install Alfresco_HOME/rm-amps/alfresco-rm-community-repo-3.0.a.amp Tomcat_HOME/webapps/alfresco.war</li>
+<li>java -jar Alfresco_HOME/bin/alfresco-mmt.jar install Alfresco_HOME/rm-amps/alfresco-rm-community-share-3.0.a.amp Tomcat_HOME/webapps/share.war</li>
+</ol>
+ 
+ 
 <h4>System Start: </h4>
 <ol>
 <li>Run this command - ActiveMQ_HOME/bin/activemq start</li>
@@ -62,6 +70,15 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 <li>http://localhost:8080/alfresco/service/index/all</li>
 </ul>
 
-
-
 <h4>Default Admin username and password admin/admin</h4>
+
+<h4>System Stop: </h4>
+<ul>
+<li>Run this command - ps -ef |grep java</li>
+<li>Identify java process ids for tomcat, solr and activemq</li>
+<ol>
+<li>Kill tomcat instance of java (Required)</li>
+<li>Kill solr instance of java (Required)</li>
+<li>Kill acativemq instance of java (Optional)</li>
+ </ol>
+</ul>
