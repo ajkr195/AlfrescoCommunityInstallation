@@ -12,11 +12,11 @@ Alfresco Community Edition "New Installation" Steps
 
 <h4> Now extract/unzip/untar - </h4> 
 
- Extract #1 in a directory. This will be our Alfresco_HOME. Say - /home/user/alfresco<br>  
- Extract #2 in a directory. This will be our Solr_HOME - Alfresco_HOME/alfrescoss<br>  
- Extract #3 in a directory. This will be our ActiveMQ_HOME - Alfresco_HOME/activemq<br>  
- Extract #4 in Alfresco_HOME/rm-amps<br>  
- Extract #5 in a directory. This will be our Tomcat_HOME- Alfresco_HOME/tomcat<br><br> 
+ Extract #1 in a directory. This will be our Alfresco_HOME. Say - /home/user/alfresco 
+ Extract #2 in a directory. This will be our Solr_HOME - Alfresco_HOME/alfrescoss  
+ Extract #3 in a directory. This will be our ActiveMQ_HOME - Alfresco_HOME/activemq  
+ Extract #4 in Alfresco_HOME/rm-amps 
+ Extract #5 in a directory. This will be our Tomcat_HOME- Alfresco_HOME/tomcat 
  <h4> Files/dirs structure copy steps:</h4><br> 
  Copy all files/directories from the dirs of Alfresco_HOME/web-server to the corresponding dirs of Alfresco_HOME/tomcat directory like below:<br> 
  1. Copy Alfresco_HOME/web-server/conf/Catalina directory in Alfresco_HOME/tomcat/conf directory<br> 
