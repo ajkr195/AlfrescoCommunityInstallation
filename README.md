@@ -33,12 +33,12 @@ https://pgdash.io/blog/postgres-11-getting-started.html
  <ol>
  <li>Copy Alfresco_HOME/web-server/conf/Catalina directory in Alfresco_HOME/tomcat/conf directory </li>
  <li>Copy Alfresco_HOME/web-server/shared directory inside Tomcat_HOME. That is - Alfresco_HOME/tomcat </li>
- <li>Create a directory "lib" in Alfresco_HOME/tomcat/shared/  so that you have a path - Alfresco_HOME/tomcat/shared/lib </li>
- <li>Now copy Alfresco_HOME/web-server/lib/postgresql-x.y.z.jar to the directory created in above step. That is - Alfresco_HOME/tomcat/shared/lib</li>
- <li>Empty Alfresco_HOME/tomcat/webapps directory. That means - Delete everything inside this directory - Alfresco_HOME/tomcat/webapps </li>
- <li>Now copy all .war files from Alfresco_HOME/web-server/webapps/ to Alfresco_HOME/tomcat/webapps directory </li>
+ <li>Create a directory "lib" in Tomcat_HOME/shared/  so that you have a path - Tomcat_HOME/shared/lib </li>
+ <li>Now copy Alfresco_HOME/web-server/lib/postgresql-x.y.z.jar to the directory created in above step. That is - Tomcat_HOME/shared/lib</li>
+ <li>Empty Alfresco_HOME/tomcat/webapps directory. That means - Delete everything inside this directory - Tomcat_HOME/webapps </li>
+ <li>Now copy all .war files from Alfresco_HOME/web-server/webapps/ to Tomcat_HOME/webapps directory </li>
  <li>OPTIONAL - <br>Build and create your ACS REST API Explorer war file using "mvn clean install" from here - https://github.com/Alfresco/rest-api-explorer <br> and here <br> https://github.com/Alfresco/records-management/tree/master/rm-community/rm-community-rest-api-explorer <br> OR <br> Download them from https://github.com/ajkr195/AlfrescoCommunityInstallation/blob/main/rest-api-explorer.war and https://github.com/ajkr195/AlfrescoCommunityInstallation/blob/main/rm-rest-api-explorer.war</li>
- <li>OPTIONAL - <br>Copy above two generated/downloaded war files to Alfresco_HOME/tomcat/webapps directory</li>
+ <li>OPTIONAL - <br>Copy above two generated/downloaded war files to Tomcat_HOME/webapps directory</li>
  <li> Create directory - Alfresco_HOME/modules</li>
  <li> Create directory - Alfresco_HOME/modules/platform</li>
  <li> Create directory - Alfresco_HOME/modules/share</li>
