@@ -43,7 +43,7 @@ https://pgdash.io/blog/postgres-11-getting-started.html
  <li> Create directory - Alfresco_HOME/modules/platform</li>
  <li> Create directory - Alfresco_HOME/modules/share</li>
  <li>Update Tomcat_HOME/conf/catalina.properties file. Search for - "shared.loader=" and update it like this -  shared.loader=${catalina.base}/shared/classes,${catalina.base}/shared/lib/*.jar </li>
-<li>Download this file - https://github.com/ajkr195/AlfrescoCommunityInstallation/blob/main/alfresco-global.properties and place it in this directory - Tomcat_HOME/shared/classes </li>
+<li>Download this file - https://github.com/ajkr195/AlfrescoCommunityInstallation/blob/main/alfresco-global.properties and place it in this directory - Tomcat_HOME/shared/classes <br> Make sure you have correct database name and user+password as per pre-requisites </li>
  </ol>
 <h4>Configure Solr6</h4>
 <ol>
