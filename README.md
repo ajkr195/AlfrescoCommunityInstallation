@@ -48,7 +48,7 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 <li>Run this command Solr_HOME/solr/bin/solr start -a "-Dcreate.alfresco.defaults=alfresco,archive" </li>
 </ol>
 
-<h4>Install Share and Records Manager (Governance Services) amps files </h4>
+<h4>Install Share and Records Manager (Governance Services) amp (Alfresco Module Packages) files </h4>
 <ol>
 <li>java -jar Alfresco_HOME/bin/alfresco-mmt.jar install Alfresco_HOME/amps/alfresco-share-services.amp Tomcat_HOME/webapps/alfresco.war</li>
 <li>java -jar Alfresco_HOME/bin/alfresco-mmt.jar install Alfresco_HOME/rm-amps/alfresco-rm-community-repo-3.0.a.amp Tomcat_HOME/webapps/alfresco.war</li>
