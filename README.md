@@ -70,7 +70,7 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 <li>http://localhost:8080/alfresco/service/index/all</li>
 </ul>
 
-<h4>Default Admin username and password</h4> - <h2> admin/admin </h2>
+<h4>Default Admin username and password - </h4><h2> admin/admin </h2>
 
 <h4>System Stop: </h4>
 <ul>
