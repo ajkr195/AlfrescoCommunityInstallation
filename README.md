@@ -1,6 +1,12 @@
 # AlfrescoCommunityInstallation
 Alfresco Community Edition "New Installation" Steps
 
+<h4> Sand-Box Pre-Requisites:</h4> 
+
+Installed JDK version - 11.x
+
+Installed Postgresql - 11.x. A (blank) database name and a user+password who is owner of the database.
+
 <h4> Download Links for Software Packages:</h4> 
 
 1. Distribution (ACS): https://download.alfresco.com/cloudfront/release/community/201911-GA-build-368/alfresco-content-services-community-distribution-6.2.0-ga.zip<br>
@@ -29,11 +35,14 @@ Alfresco Community Edition "New Installation" Steps
  <li> Create directory - Alfresco_HOME/modules/platform</li>
  <li> Create directory - Alfresco_HOME/modules/share</li>
  <li>Update Tomcat_HOME/conf/catalina.properties file. Search for - "shared.loader=" and update it like this -  shared.loader=${catalina.base}/shared/classes,${catalina.base}/shared/lib/*.jar </li>
- <li> Create directory - Alfresco_HOME/modules</li>
  </ol>
- 
- <li> </li>
-  
+<h4>Configure Solr6</h4>
+<ol>
+<li>Comment/delete this line - alfresco.port.ssl=8443 in Solr_HOME/solrhome/templates/rerank/conf/solrcore.properties </li>
+<li>Change this line - alfresco.secureComms=https to alfresco.secureComms=none in in Solr_HOME/solrhome/templates/rerank/conf/solrcore.properties</li>
+<li>Save and close Solr_HOME/solrhome/templates/rerank/conf/solrcore.properties file</li>
+<li>Run this command Solr_HOME/solr/bin/solr start -a "-Dcreate.alfresco.defaults=alfresco,archive" </li>
+</ol>
  
  
  
