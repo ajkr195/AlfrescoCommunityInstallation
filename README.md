@@ -3,9 +3,11 @@ Alfresco Community Edition "New Installation" Steps
 
 <h4> Sand-Box Pre-Requisites:</h4> 
 
-Installed JDK version - 11.x
+Installed JDK version - 11.x (for ubuntu - sudo apt install openjdk-11-jdk) 
 
 Installed Postgresql - 11.x. A (blank) database name and a user+password who is owner of the database.
+https://computingforgeeks.com/install-postgresql-11-on-ubuntu-linux/
+https://pgdash.io/blog/postgres-11-getting-started.html
 
 <h4> Download Links for Software Packages:</h4> 
 
@@ -23,6 +25,8 @@ Installed Postgresql - 11.x. A (blank) database name and a user+password who is 
  Extract #3 in our ActiveMQ_HOME - Alfresco_HOME/activemq  
  Extract #4 in Alfresco_HOME/rm-amps<br>
  Extract #5 in our Tomcat_HOME- Alfresco_HOME/tomcat 
+ Extract alfresco-pdf-renderer-1.1-linux.tgz in Alfresco_HOME/alfresco-pdf-renderer directory
+ 
  <h4> Files/dirs structure copy/creation steps:</h4>
  <ol>
  <li>Copy Alfresco_HOME/web-server/conf/Catalina directory in Alfresco_HOME/tomcat/conf directory </li>
@@ -43,6 +47,21 @@ Installed Postgresql - 11.x. A (blank) database name and a user+password who is 
 <li>Save and close Solr_HOME/solrhome/templates/rerank/conf/solrcore.properties file</li>
 <li>Run this command Solr_HOME/solr/bin/solr start -a "-Dcreate.alfresco.defaults=alfresco,archive" </li>
 </ol>
- 
- 
- 
+  
+<h4>System Start: </h4>
+<ol>
+<li>Run this command - ActiveMQ_HOME/bin/activemq start</li>
+<li>Run this command - Tomcat_HOME/bin/startup.sh & disown</li>
+<li>Run this command - Solr_HOME/solr/bin/solr start</li>
+</ol>
+
+<h4>URLs: </h4>
+<ul>
+<li>http://localhost:8080/alfresco</li>
+<li>http://localhost:8080/share</li>
+<li>http://localhost:8080/alfresco/service/index/all</li>
+</ul>
+
+
+
+<h4>Default Admin username and password admin/admin</h4>
