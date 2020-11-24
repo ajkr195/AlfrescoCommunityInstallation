@@ -24,13 +24,13 @@ Alfresco Community Edition "New Installation" Steps
  Create a directory "lib" in Alfresco_HOME/tomcat/shared/  so that you have a path - Alfresco_HOME/tomcat/shared/lib<br> 
  Now copy Alfresco_HOME/web-server/lib/postgresql-x.y.z.jar to the directory created in above step. That is - Alfresco_HOME/tomcat/shared/lib<br> 
  Empty Alfresco_HOME/tomcat/webapps directory. That means - Delete everything inside this directory - Alfresco_HOME/tomcat/webapps<br> 
- Now copy all .war files from Alfresco_HOME/web-server/webapps/ to Alfresco_HOME/tomcat/webapps directory<br> 
+ Now copy all .war files from Alfresco_HOME/web-server/webapps/ to Alfresco_HOME/tomcat/webapps directory 
  Create these directories - 
  
  Alfresco_HOME/modules<br> 
  Alfresco_HOME/modules/platform<br> 
  Alfresco_HOME/modules/share<br> 
  
- Update Alfresco_HOME/tomcat/conf/catalina.properties file. Search for - "shared.loader=" and update it like this shared.loader=${catalina.base}/shared/classes,${catalina.base}/shared/lib/*.jar
+ Update Tomcat_HOME/conf/catalina.properties file. Search for - "shared.loader=" and update it like this shared.loader=${catalina.base}/shared/classes,${catalina.base}/shared/lib/*.jar
  
  
