@@ -72,6 +72,8 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 <ul>
 <li>http://localhost:8080/alfresco</li>
 <li>http://localhost:8080/share</li>
+<li> http://localhost:8080/rest-api-explorer</li>
+<li> http://localhost:8080/rm-rest-api-explorer</li>
 <li>http://localhost:8080/alfresco/service/index/all</li>
 </ul>
 
