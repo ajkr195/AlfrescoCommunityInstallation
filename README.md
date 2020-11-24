@@ -20,7 +20,7 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 
 <h4> Extract/UNZIP/UNTAR - </h4> 
 <ul>
-<li> Extract #1 in our Alfresco_HOME. Say - /home/user/alfresco</li> 
+<li> Extract #1 in our Alfresco_HOME. Say - /home/user/Documents/alfresco</li> 
 <li>  Extract #2 in our Solr_HOME - Alfresco_HOME/alfrescoss  </li> 
 <li>  Extract #3 in our ActiveMQ_HOME - Alfresco_HOME/activemq  </li> 
 <li>  Extract #4 in Alfresco_HOME/rm-amps<br></li> 
