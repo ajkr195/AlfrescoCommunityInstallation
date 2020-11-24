@@ -69,13 +69,12 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 </ol>
 
 <h4>URLs: </h4>
-<ul>
-<li>http://localhost:8080/alfresco</li>
-<li>http://localhost:8080/share</li>
-<li> http://localhost:8080/rest-api-explorer</li>
-<li> http://localhost:8080/rm-rest-api-explorer</li>
-<li>http://localhost:8080/alfresco/service/index/all</li>
-</ul>
+http://localhost:8080/alfresco<br>
+http://localhost:8080/share<br>
+http://localhost:8080/rest-api-explorer<br>
+http://localhost:8080/rm-rest-api-explorer<br>
+http://localhost:8080/alfresco/service/index/all<br>
+
 
 <h4>Default Admin username and password - </h4><h2> admin/admin </h2>
 
