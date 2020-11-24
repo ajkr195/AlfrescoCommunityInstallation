@@ -39,7 +39,7 @@ Installed Postgresql - 11.x. A (blank) database name and a user+password who is 
 <h4>Configure Solr6</h4>
 <ol>
 <li>Comment/delete this line - alfresco.port.ssl=8443 in Solr_HOME/solrhome/templates/rerank/conf/solrcore.properties </li>
-<li>Change this line - alfresco.secureComms=https to alfresco.secureComms=none in in Solr_HOME/solrhome/templates/rerank/conf/solrcore.properties</li>
+<li>Change this line - alfresco.secureComms=https to alfresco.secureComms=none in Solr_HOME/solrhome/templates/rerank/conf/solrcore.properties</li>
 <li>Save and close Solr_HOME/solrhome/templates/rerank/conf/solrcore.properties file</li>
 <li>Run this command Solr_HOME/solr/bin/solr start -a "-Dcreate.alfresco.defaults=alfresco,archive" </li>
 </ol>
