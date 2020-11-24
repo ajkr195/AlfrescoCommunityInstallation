@@ -4,7 +4,6 @@ Alfresco Community Edition "New Installation" Steps
 <h4> Sand-Box Pre-Requisites:</h4> 
 
 Installed JDK version - 11.x (for ubuntu - sudo apt install openjdk-11-jdk) 
-
 Installed Postgresql - 11.x. A (blank) database name and a user+password who is owner of the database.
 https://computingforgeeks.com/install-postgresql-11-on-ubuntu-linux/<br>
 https://pgdash.io/blog/postgres-11-getting-started.html
