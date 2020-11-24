@@ -12,9 +12,9 @@ Alfresco Community Edition "New Installation" Steps
 
 <h4> Now extract/unzip/untar - </h4> 
 
- Extract #1 in a directory. This will be our Alfresco_HOME. Say - /home/user/alfresco<br>
- Extract #2 in a directory. This will be our Solr_HOME - Alfresco_HOME/alfrescoss  
- Extract #3 in a directory. This will be our ActiveMQ_HOME - Alfresco_HOME/activemq  
+ Extract #1 in our Alfresco_HOME. Say - /home/user/alfresco<br>
+ Extract #2 in our Solr_HOME - Alfresco_HOME/alfrescoss  
+ Extract #3 in our ActiveMQ_HOME - Alfresco_HOME/activemq  
  Extract #4 in Alfresco_HOME/rm-amps 
  Extract #5 in a directory. This will be our Tomcat_HOME- Alfresco_HOME/tomcat 
  <h4> Files/dirs structure copy steps:</h4><br> 
