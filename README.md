@@ -26,4 +26,10 @@ Alfresco Community Edition "New Installation" Steps
   
  #5 in Alfresco_HOME/tomcat
  
+ <h4> File copy steps:</h4>
+ 
+ Copy all files/dirs from the dirs of Alfresco_HOME/web-server to the corresponding dirs of Alfresco_HOME/tomcat directory.
+ 
+ 
+ 
  
