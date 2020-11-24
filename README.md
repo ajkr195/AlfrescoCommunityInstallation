@@ -18,7 +18,7 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 5. Tomcat (WebServer): https://mirrors.sonic.net/apache/tomcat/tomcat-8/v8.5.60/bin/apache-tomcat-8.5.60.tar.gz
 
 
-<h4> Now extract/unzip/untar - </h4> 
+<h4> Extract/UNZIP/UNTAR - </h4> 
 <ul>
 <li> Extract #1 in our Alfresco_HOME. Say - /home/user/alfresco</li> 
 <li>  Extract #2 in our Solr_HOME - Alfresco_HOME/alfrescoss  </li> 
