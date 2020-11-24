@@ -16,7 +16,7 @@ Alfresco Community Edition "New Installation" Steps
  Extract #2 in our Solr_HOME - Alfresco_HOME/alfrescoss  
  Extract #3 in our ActiveMQ_HOME - Alfresco_HOME/activemq  
  Extract #4 in Alfresco_HOME/rm-amps<br>
- Extract #5 in a directory. This will be our Tomcat_HOME- Alfresco_HOME/tomcat 
+ Extract #5 in our Tomcat_HOME- Alfresco_HOME/tomcat 
  <h4> Files/dirs structure copy steps:</h4><br> 
  Copy all files/directories from the dirs of Alfresco_HOME/web-server to the corresponding dirs of Alfresco_HOME/tomcat directory like below:<br> 
  1. Copy Alfresco_HOME/web-server/conf/Catalina directory in Alfresco_HOME/tomcat/conf directory<br> 
