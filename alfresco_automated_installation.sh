@@ -1,8 +1,8 @@
 #!/bin/bash
 
-alfrescohome=/home/<yourusernamehere>/Documents/alfresco620_2
+alfrescohome=/home/ajay/Documents/alfresco620_2
 
-killall java
+killall java   > /dev/null
 
 rm -rf "$alfrescohome"/*
 
@@ -117,12 +117,12 @@ touch "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
 
 
 cat << 'EOT' > "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
-dir.root=/home/<yourusernamehere>/Documents/alfresco620_2/alf_data
+dir.root=/home/ajay/Documents/alfresco620_2/alf_data
 dir.keystore=${dir.root}/keystore
-db.username=<dbusername>
-db.password=<dbpassword>
+db.username=newtestdb
+db.password=newtestdb
 db.driver=org.postgresql.Driver
-db.url=jdbc:postgresql://localhost:5432/<databasename>
+db.url=jdbc:postgresql://localhost:5432/newtestdb
 alfresco.context=alfresco
 alfresco.host=localhost
 alfresco.port=8080
@@ -180,5 +180,5 @@ echo -e "Stopping Solr6..."
 "$alfrescohome"/alfrescoss/solr/bin/solr stop   > /dev/null
 
 
-echo -e "Make sure you have the correct database-name, username and password....in this file: Tomcat_Home/tomcat/shared/classes/alfresco-global.properties"
-
+echo -e "Make sure you have the correct alf_home, database-name, username and password...."
+echo -e "in this file: Tomcat_Home/tomcat/shared/classes/alfresco-global.properties" 
