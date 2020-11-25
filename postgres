@@ -1,0 +1,15 @@
+
+
+sudo su - postgres
+
+
+createuser newdbuser
+
+
+createdb newalfdb -O newdbuser
+
+
+psql -c "alter user newdbuser with password 'newdbuserpwd'"
+
+
+DROP DATABASE newalfdb
