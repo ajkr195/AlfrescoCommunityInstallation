@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alfrescohome=/home/ajay/Documents/alfresco620_2
+alfrescohome=/home/<yourusername>/Documents/alfresco620_2
 
 killall java   > /dev/null
 
@@ -117,12 +117,12 @@ touch "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
 
 
 cat << 'EOT' > "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
-dir.root=/home/ajay/Documents/alfresco620_2/alf_data
+dir.root=/home/<yourusername>/Documents/alfresco620_2/alf_data
 dir.keystore=${dir.root}/keystore
-db.username=newtestdb
-db.password=newtestdb
+db.username=<dbownerusername>
+db.password=<dbownerpassword>
 db.driver=org.postgresql.Driver
-db.url=jdbc:postgresql://localhost:5432/newtestdb
+db.url=jdbc:postgresql://localhost:5432/<databasename>
 alfresco.context=alfresco
 alfresco.host=localhost
 alfresco.port=8080
