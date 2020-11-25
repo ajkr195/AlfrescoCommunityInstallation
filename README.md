@@ -15,6 +15,7 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 <li>Download <b>alfresco_automated_installation.sh</b>  from here - https://github.com/ajkr195/AlfrescoCommunityInstallation </li>
 <li>Update these line #  3, 120, 122, 123 and 125 as per your environment in your downloaded alfresco_automated_installation.sh file</li>
 <li>Run ./alfresco_automated_installation.sh </li>
+<li>The script will download packages, unzip/untar and configure them. Jump to URLs section after this. </li>
 </ol>
 
 <h2>Manual Installation </h2>
