@@ -2,7 +2,7 @@
 
 alfrescohome=/home/<yourusernamehere>/Documents/alfresco620_2
 
-killall java   > /dev/null
+killall java
 
 rm -rf "$alfrescohome"/*
 
