@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alfrescohome=/home/ajay/Documents/alfresco620
+alfrescohome=/home/<yourusernamehere>/Documents/alfresco620
 
 killall java
 
@@ -100,7 +100,7 @@ touch "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
 
 
 cat << 'EOT' > "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
-dir.root=/home/ajay/Documents/alfresco620/alf_data
+dir.root=/home/<yourusernamehere>/Documents/alfresco620/alf_data
 dir.keystore=${dir.root}/keystore
 db.username=newtestdb
 db.password=newtestdb
