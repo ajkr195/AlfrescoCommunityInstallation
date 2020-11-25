@@ -2,6 +2,8 @@
 
 <h4> Alfresco Community Edition 6.2.0 "New Installation" <br> All-In-One Steps (only HTTP, without SSL configuration) </h4> 
 
+<h4> Ubuntu Mate 20.04.01 LTS is used in this example </h4> 
+
 <h4> Sand-Box Pre-Requisites:</h4> 
 
 Installed JDK version - 11.x (for ubuntu - sudo apt install openjdk-11-jdk)<br>
