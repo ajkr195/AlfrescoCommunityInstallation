@@ -9,6 +9,11 @@ Installed Postgresql - 11.x. A (blank) database name and a user+password who is 
 https://computingforgeeks.com/install-postgresql-11-on-ubuntu-linux/<br>
 https://pgdash.io/blog/postgres-11-getting-started.html
 
+<h2>Automated Installation </h2>
+Download alfresco_automated_installation.sh  from here - https://github.com/ajkr195/AlfrescoCommunityInstallation 
+
+<h2>Manual Installation </h2>
+
 <h4> Download Links for Software Packages:</h4> 
 
 1. Distribution (ACS): https://download.alfresco.com/cloudfront/release/community/201911-GA-build-368/alfresco-content-services-community-distribution-6.2.0-ga.zip<br>
