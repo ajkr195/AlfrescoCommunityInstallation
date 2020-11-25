@@ -144,10 +144,10 @@ touch "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
 cat << 'EOT' > "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
 dir.root=/home/<yourusername>/Documents/alfresco62_0/alf_data
 dir.keystore=${dir.root}/keystore
-db.username=newtestdb
-db.password=newtestdb
+db.username=dbownerusername
+db.password=dbowneruserpassword
 db.driver=org.postgresql.Driver
-db.url=jdbc:postgresql://localhost:5432/newtestdb
+db.url=jdbc:postgresql://localhost:5432/newalfrescodbname
 alfresco.context=alfresco
 alfresco.host=localhost
 alfresco.port=8080
