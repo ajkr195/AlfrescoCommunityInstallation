@@ -1,6 +1,9 @@
 #!/bin/bash
 
-alfrescohome=/home/<yourusername>/Documents/alfresco62_0
+alfrescohome=/home/<your_os_username>/Documents/alfresco62_0
+alfrescodabasename=newalfdbname
+dbownerusername=ownusername
+dbowneruserpassword=ownpasswrod
 
 if [ ! -d "$alfrescohome" ] ; then 
   echo -e "alf_home doest not exist...creating...$alfrescohome...";
@@ -141,13 +144,13 @@ echo -e "Creating alfresco-global.properties..."
 touch "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
 
 
-cat << 'EOT' > "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
-dir.root=/home/<yourusername>/Documents/alfresco62_0/alf_data
-dir.keystore=${dir.root}/keystore
-db.username=dbownerusername
-db.password=dbowneruserpassword
+cat << EOT > "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
+dir.root=$alfrescohome/alf_data
+dir.keystore=\${dir.root}/keystore
+db.username=$dbownerusername
+db.password=$dbowneruserpassword
 db.driver=org.postgresql.Driver
-db.url=jdbc:postgresql://localhost:5432/newalfrescodbname
+db.url=jdbc:postgresql://localhost:5432/$alfrescodabasename
 alfresco.context=alfresco
 alfresco.host=localhost
 alfresco.port=8080
@@ -160,7 +163,7 @@ alfresco.rmi.services.host=localhost
 smart.folders.enabled=true
 smart.folders.model=alfresco/model/smartfolder-model.xml
 smart.folders.model.labels=alfresco/messages/smartfolder-model
-alfresco-pdf-renderer.root=/home/<yourusername>/Documents/alfresco62_0/alfresco-pdf-renderer
+alfresco-pdf-renderer.root=$alfrescohome/alfresco-pdf-renderer
 alfresco-pdf-renderer.exe=${alfresco-pdf-renderer.root}/alfresco-pdf-renderer
 alfresco-pdf-renderer.url=http://localhost:8090/
 index.subsystem.name=solr6
