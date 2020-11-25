@@ -10,6 +10,7 @@ https://computingforgeeks.com/install-postgresql-11-on-ubuntu-linux/<br>
 https://pgdash.io/blog/postgres-11-getting-started.html
 
 <h2>Automated Installation </h2>
+<h4>Entire setup process takes less than 2 minutes + packages download time</h4>
 <ol>
 <li>Download <b>alfresco_automated_installation.sh</b>  from here - https://github.com/ajkr195/AlfrescoCommunityInstallation </li>
 <li>Update these line #  3, 120, 122, 123 and 125 as per your environment in your downloaded alfresco_automated_installation.sh file</li>
