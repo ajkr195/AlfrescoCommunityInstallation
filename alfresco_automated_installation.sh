@@ -1,10 +1,35 @@
 #!/bin/bash
 
-alfrescohome=/home/<yourusername>/Documents/alfresco620_2
+alfrescohome=/home/<yourusername>/Documents/alfresco62_0
 
-killall java   > /dev/null
+if [ ! -d "$alfrescohome" ] ; then 
+  echo -e "alf_home doest not exist...creating...$alfrescohome...";
+  echo -e "Creating alf_home directory ...$alfrescohome...";
+  mkdir "$alfrescohome";
+  #sleep 3;
+else
+  echo -e "alf_home exists...$alfrescohome...";
+  echo -e "Clearing alf_home for new installation...";
+  rm -rf "$alfrescohome"/*
+  #sleep 3;
+fi
 
-rm -rf "$alfrescohome"/*
+echo "Killing running processes at port 8080 if any..."
+#pid=$(lsof -i:8080 -t); kill -TERM $pid || kill -KILL $pid
+alias kill8080="fuser -k -n tcp 8080"
+kill -9 $(lsof -i:8080 -t) 2> /dev/null
+#sleep 3;
+echo "Killing running processes at port 8191 if any..."
+#pid2=$(lsof -i:8191 -t); kill -TERM $pid2 || kill -KILL $pid2
+alias kill8191="fuser -k -n tcp 8191"
+kill -9 $(lsof -i:8191 -t) 2> /dev/null
+#sleep 3;
+echo "Killing running processes at port 8983 if any..."
+#pid3=$(lsof -i:8983 -t); kill -TERM $pid3 || kill -KILL $pid3
+alias kill8983="fuser -k -n tcp 8983"
+kill -9 $(lsof -i:8983 -t) 2> /dev/null
+#sleep 3;
+
 
 systemctl status postgresql > /dev/null
 if [ "$?" -gt "0" ]; then
@@ -117,12 +142,12 @@ touch "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
 
 
 cat << 'EOT' > "$alfrescohome"/tomcat/shared/classes/alfresco-global.properties
-dir.root=/home/<yourusername>/Documents/alfresco620_2/alf_data
+dir.root=/home/<yourusername>/Documents/alfresco62_0/alf_data
 dir.keystore=${dir.root}/keystore
-db.username=<dbownerusername>
-db.password=<dbownerpassword>
+db.username=newtestdb
+db.password=newtestdb
 db.driver=org.postgresql.Driver
-db.url=jdbc:postgresql://localhost:5432/<databasename>
+db.url=jdbc:postgresql://localhost:5432/newtestdb
 alfresco.context=alfresco
 alfresco.host=localhost
 alfresco.port=8080
@@ -135,7 +160,7 @@ alfresco.rmi.services.host=localhost
 smart.folders.enabled=true
 smart.folders.model=alfresco/model/smartfolder-model.xml
 smart.folders.model.labels=alfresco/messages/smartfolder-model
-alfresco-pdf-renderer.root=/home/ajay/Documents/alfresco/alfresco-pdf-renderer
+alfresco-pdf-renderer.root=/home/<yourusername>/Documents/alfresco/alfresco-pdf-renderer
 alfresco-pdf-renderer.exe=${alfresco-pdf-renderer.root}/alfresco-pdf-renderer
 alfresco-pdf-renderer.url=http://localhost:8090/
 index.subsystem.name=solr6
@@ -179,6 +204,12 @@ java -jar "$alfrescohome"/bin/alfresco-mmt.jar install "$alfrescohome"/rm-apts/a
 echo -e "Stopping Solr6..."
 "$alfrescohome"/alfrescoss/solr/bin/solr stop   > /dev/null
 
+echo -e "Cleaning unused files and directories..."
+cp "$alfrescohome"/rm-apts/*.amp "$alfrescohome"/amps
+rm -rf "$alfrescohome"/rm-apts
+rm -rf "$alfrescohome"/web-server
+rm "$alfrescohome"/alfresco-pdf-renderer/*.tgz
 
-echo -e "Make sure you have the correct alf_home, database-name, username and password...."
+
+echo -e "Make sure you have the correct alf_home, database-name, username and password "
 echo -e "in this file: Tomcat_Home/tomcat/shared/classes/alfresco-global.properties" 
