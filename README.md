@@ -15,7 +15,7 @@ https://pgdash.io/blog/postgres-11-getting-started.html
 <h4>Entire setup process takes less than 2 minutes + packages download time</h4>
 <ol>
 <li>Download <b>alfresco_automated_installation.sh</b>  from here - https://github.com/ajkr195/AlfrescoCommunityInstallation </li>
-<li>Update these line #  3, 4, 5, and 6 as per your environment in your downloaded alfresco_automated_installation.sh file</li>
+<li>Update these line #  8, 9, 10, and 11 as per your environment in your downloaded alfresco_automated_installation.sh file</li>
 <li>Run ./alfresco_automated_installation.sh </li>
 <li>The script will download packages, unzip/untar and configure them. Jump to "System Start" section after this. </li>
 </ol>
