@@ -41,7 +41,7 @@ kill -9 $(lsof -i:8983 -t) 2> /dev/null
 
 systemctl status postgresql > /dev/null
 # WORKS PERFECTLY. COMMENT ABOVE AND UNCOMMENT BELOW IF USING POSTGRESQL 12 ON CentOS 7.
-# systemctl status postgresql-12
+# systemctl status postgresql-12 > /dev/null
 
 if [ "$?" -gt "0" ]; then
   echo -e "PostgreSQL Database Not Installed..\nError..!!!\nExiting now..."
