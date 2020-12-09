@@ -6,9 +6,9 @@
 
 # FOR EXAMPLE - alfrescohome=/home/admin/Documents/alfresco
 alfrescohome=/home/<your_os_username>/Documents/alfresco62_0
-alfrescodabasename=newalfdbname
-dbownerusername=ownusername
-dbowneruserpassword=ownpasswrod
+alfrescodabasename=newalfdbname # Your chosen database name
+dbownerusername=ownusername     # Your database (above) owner's username
+dbowneruserpassword=ownpasswrod # Your database owner's password
 
 if [ ! -d "$alfrescohome" ] ; then 
   echo -e "alf_home doest not exist...creating...$alfrescohome...";
