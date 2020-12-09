@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# THIS SCRIPT IS PRIMARILY INTENDED FOR UBUNTU MATE 20.04.1 (any may be other ubuntu based distros too). HOWEVER,
+# THIS SCRIPT WORKS PERFECTYLY ON CentOS 7 TOO. Tested SUCCESSFULLY ON CentOS 7.9, Tomcat 8.5.60 AND POSTGRESQL-12.
+# READ COMMENTS IN-LINE
+
+# FOR EXAMPLE - alfrescohome=/home/admin/Documents/alfresco
 alfrescohome=/home/<your_os_username>/Documents/alfresco62_0
 alfrescodabasename=newalfdbname
 dbownerusername=ownusername
@@ -35,6 +40,9 @@ kill -9 $(lsof -i:8983 -t) 2> /dev/null
 
 
 systemctl status postgresql > /dev/null
+# WORKS PERFECTLY. COMMENT ABOVE AND UNCOMMENT BELOW IF USING POSTGRESQL 12 ON CentOS 7.
+# systemctl status postgresql-12
+
 if [ "$?" -gt "0" ]; then
   echo -e "PostgreSQL Database Not Installed..\nError..!!!\nExiting now..."
   exit 1; 
